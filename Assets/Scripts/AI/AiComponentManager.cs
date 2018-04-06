@@ -42,7 +42,7 @@ namespace AiManager
         {
              Vector3 col = start ;
             for (int j =0; j < Math.Sqrt(this.numberOfSquares); j++){
-                this.componentsList.Add((col+col-new Vector3(this.gridSideLength,0,this.gridSideLength))/2, new List<AiComponent>());
+                this.componentsList.Add((col+col-new Vector3(this.gridSideLength,0,-this.gridSideLength))/2, new List<AiComponent>());
                 col = col - new Vector3(0.0f,0.0f,this.gridSideLength);
             }
             start = start - new Vector3(this.gridSideLength,0.0f,0.0f);
