@@ -20,7 +20,6 @@ public abstract class MovableComponent {
             NavMeshHit hit;
             if (NavMesh.SamplePosition(randomPoint, out hit, 1.0f, NavMesh.AllAreas)  ) {
 				point = hit.position;
-                Debug.Log(tempPath==null);
 				this.agent.CalculatePath(point , this.tempPath);
 				if(this.tempPath.status == NavMeshPathStatus.PathComplete) return point;
 			}
