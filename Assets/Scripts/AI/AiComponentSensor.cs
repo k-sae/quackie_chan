@@ -1,9 +1,12 @@
+using System;
+using System.Collections.Generic;
+using UnityEngine;
 namespace AiManager
 {
     public interface AiComponentSensor
     {
-     public void notifyNearbyComponents(List<AiComponent> nearbyComponents);   
-     public  Vector3 getPosition();
-     public float getSensorRange();
+      void notifyNearbyComponents(List<AiComponent> nearbyComponents);   
+      Vector3 getPosition();
+      float getSensorRange();
     }
 }
