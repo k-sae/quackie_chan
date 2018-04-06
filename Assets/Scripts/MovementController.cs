@@ -63,9 +63,10 @@ public class MovementController : MonoBehaviour {
 		// Jumping function
 		if (Input.GetKeyDown(KeyCode.Space) && isGrounded == true) {
 			// TODO: FIX THIS
-			// isGrounded = false;
+
 			rb.AddForce(0, jumpHeight * Time.deltaTime, 0);
 			anim.SetTrigger("isJumping");
+			OnCollisionEnter ();
 		}	
 	}
 
