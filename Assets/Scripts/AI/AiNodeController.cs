@@ -5,7 +5,10 @@ namespace AiManager
     {
         private AiComponentManager aiManager;
         private void Awake() {
-            aiManager = new AiComponentManager();
+            aiManager = new AiComponentManager(GetComponent<Collider>());
+        }
+        private void Start() {
+           
         }
 
         public AiComponentManager getAiManager(){

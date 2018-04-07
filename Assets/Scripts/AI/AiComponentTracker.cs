@@ -1,3 +1,5 @@
+using UnityEngine;
+
 namespace AiManager
 {
     public interface AiComponentTracker
@@ -7,6 +9,7 @@ namespace AiManager
     /// <summary>
     /// Call during Component movement
     /// </summary>
-     void notifyOnMove(AiComponent component);    
+     void notifyOnMove(Vector3 position);    
+     
     }
 }
