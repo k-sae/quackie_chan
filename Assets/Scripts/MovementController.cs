@@ -32,7 +32,7 @@ public class MovementController : MonoBehaviour {
 	void Update () {
 		timeWatch++;
 		if (timeWatch == 300) {
-			kidnap.text = "your childern is  kidnapped";
+			kidnap.text = "your children is kidnapped";
 		}
 		if (timeWatch == 500) {
 			kidnap.text = "";
