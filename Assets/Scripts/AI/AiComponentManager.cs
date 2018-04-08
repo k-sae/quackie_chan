@@ -15,15 +15,33 @@ namespace AiManager
      private float gridSideLength;
      private readonly int numberOfSquares;
      public Collider node;
-     public AiComponentManager() {
+     public AiComponentManager(Collider node) {
+         this.node = node;
         componentsList = new Dictionary<Vector3,List<AiComponent>>();
         gridSideLength = fitSquareSide(node.bounds.size.x,node.bounds.size.z);
-
      }
-     public void registerComponent(AiComponent component){}
-     public void unregisterComponent(AiComponent component){}
-     public void notifyOnMove(AiComponent component){
-         
+     public void registerComponent(AiComponent component){
+         Vector3? key = this.getContainingGridCenter(component);
+         if(key.HasValue)
+         this.componentsList[key.Value].Add(component);
+     }
+     public void unregisterComponent(AiComponent component){
+          foreach(KeyValuePair<Vector3, List<AiComponent>> entry in this.componentsList)
+            {
+                if(this.componentsList[entry.Key].Contains(component)){
+                    this.componentsList[entry.Key].Remove(component);
+                    break;
+                }
+            }
+     }
+     public void notifyOnMove(Vector3 position){
+         List<AiComponent> agents =this.getAgetsInPlayerRange(position);
+         List<AiComponent> temp;
+         foreach(AiComponent agent in agents){
+             temp = new List<AiComponent>(agents);
+             temp.Remove(agent);
+             agent.notifyNearbyComponents(temp);
+         }
      }  
      float fitSquareSide(double width, double length){
         double sx, sy;
@@ -49,5 +67,29 @@ namespace AiManager
             
         }
     }
+    private Vector3? getContainingGridCenter(AiComponent component){
+         Vector2 componentPosition = new Vector2(component.getPosition().x,component.getPosition().z);
+         Rect grid = new Rect(0,0,this.gridSideLength,this.gridSideLength);
+         foreach(KeyValuePair<Vector3, List<AiComponent>> entry in this.componentsList)
+            {
+                grid.center = new Vector2(entry.Key.x,entry.Key.z);
+                if(grid.Contains(componentPosition)){
+                    
+                    return entry.Key;
+                }
+            }
+           return null;
+    }
+    private List<AiComponent> getAgetsInPlayerRange(Vector3 position){
+        List<AiComponent> near = new List<AiComponent>();
+         foreach(KeyValuePair<Vector3, List<AiComponent>> entry in this.componentsList)
+            {
+              if(Vector3.Distance(entry.Key,position)<=PlayerTrigger.PLAYER_RANGE)
+              near.AddRange(this.componentsList[entry.Key]);
+            }
+            return near;
+    }
+
+
     }    
 }
