@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.UI;
 public class MovementController : MonoBehaviour {
 	public bool isGrounded;
 	private float speed;
@@ -16,19 +16,29 @@ public class MovementController : MonoBehaviour {
 	private float rot_speed = 3.0f;
 	Rigidbody rb;
 	Animator anim;
-
+	public static int timeWatch;
+	public Text kidnap;
 	// Use this for initialization
 	void Start () {
 		rb = GetComponent<Rigidbody>();
 		anim = GetComponent<Animator>();
 		isGrounded = true; //indicate that we are in the ground
 		isSleeping = true;
+		kidnap.text = "";
+		timeWatch = 0;
 	}
 	
 	// Update is called once per frame
 	void Update () {
-		
-		if (isGrounded) {
+		timeWatch++;
+		if (timeWatch == 300) {
+			kidnap.text = "your childern is  kidnapped";
+		}
+		if (timeWatch == 500) {
+			kidnap.text = "";
+		}
+
+		if (isGrounded&&timeWatch > 300) {
 			//moving forward and backward
 			if (Input.GetKey(KeyCode.W) && !Input.GetKey(KeyCode.LeftShift)) {
 				speed = w_speed;
