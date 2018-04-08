@@ -54,17 +54,10 @@ public class MovementController : MonoBehaviour {
 				rotSpeed = 0;
 			}
 		}
-		var z = Input.GetAxis("Vertical") * speed;
-		var y = Input.GetAxis("Horizontal") * rotSpeed;
-
-		transform.Translate(0, 0, z);
-		transform.Rotate(0, y, 0);
 
 		// Jumping function
 		if (Input.GetKeyDown(KeyCode.Space) && isGrounded == true) {
 			// TODO: FIX THIS
-
-			rb.AddForce(0, jumpHeight * Time.deltaTime, 0);
 			anim.SetTrigger("isJumping");
 			OnCollisionEnter ();
 		}	
