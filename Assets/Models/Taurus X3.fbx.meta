@@ -1,0 +1,789 @@
+fileFormatVersion: 2
+guid: d68f1d76c586549a9a487147b760f02f
+timeCreated: 1523300761
+licenseType: Free
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: 8Node
+    100002: 8Node_MeshPart0
+    100004: 8Node_MeshPart1
+    100006: 8Node_MeshPart10
+    100008: 8Node_MeshPart11
+    100010: 8Node_MeshPart12
+    100012: 8Node_MeshPart2
+    100014: 8Node_MeshPart3
+    100016: 8Node_MeshPart4
+    100018: 8Node_MeshPart5
+    100020: 8Node_MeshPart6
+    100022: 8Node_MeshPart7
+    100024: 8Node_MeshPart8
+    100026: 8Node_MeshPart9
+    100028: 'Asembly cyber '
+    100030: Assembly Bubble
+    100032: Assembly Helipods
+    100034: Assembly Helipods.1
+    100036: Assembly Pincer
+    100038: Assembly Pistons
+    100040: Assembly Pods
+    100042: Assembly Rear
+    100044: Assembly Slider
+    100046: Ball
+    100048: Ball.1
+    100050: BASE
+    100052: BaseGrid
+    100054: Box
+    100056: Box.1
+    100058: Bubble Bucky 01
+    100060: Bubble Collar
+    100062: Bubble Helix * 2
+    100064: Capsule
+    100066: Capsule windows
+    100068: Capsule.1
+    100070: Capsule.2
+    100072: Chain
+    100074: CHEETAH
+    100076: CloseUps
+    100078: Command Pod
+    100080: Command Torus
+    100082: ConeR
+    100084: Cones
+    100086: Cones Panels
+    100088: Cylinder
+    100090: Cylinder.1
+    100092: Cylinder.2
+    100094: CylinderSet
+    100096: Diaphragm
+    100098: Disc
+    100100: Extrude
+    100102: Extrude.1
+    100104: Extrude_MeshPart0
+    100106: Extrude_MeshPart1
+    100108: Fin
+    100110: Grid top
+    100112: Grid top.1
+    100114: hexFrame
+    100116: HexTower
+    100118: Loxo NRGee
+    100120: Luge
+    100122: Luge.1
+    100124: Navigator Bubble
+    100126: Onion NRGee
+    100128: ParaboleR
+    100130: Particle Mesh
+    100132: Particle Mesh.1
+    100134: Particle Mesh.1.1
+    100136: Particle Mesh.2
+    100138: Particle Mesh.2.1
+    100140: Particle Mesh.3
+    100142: Particle Mesh.3.1
+    100144: Particle Mesh.4
+    100146: Particle Mesh.4.1
+    100148: Particle Mesh.4_MeshPart0
+    100150: Particle Mesh.4_MeshPart1
+    100152: Particle Mesh.4_MeshPart2
+    100154: Particle Mesh.5
+    100156: Particle Mesh.5.1
+    100158: Particle Mesh.5_MeshPart0
+    100160: Particle Mesh.5_MeshPart1
+    100162: Particle Mesh.6
+    100164: Particle Mesh.6_MeshPart0
+    100166: Particle Mesh.6_MeshPart1
+    100168: Particle Mesh.7
+    100170: Particle Mesh.7_MeshPart0
+    100172: Particle Mesh.7_MeshPart1
+    100174: Particle Mesh_MeshPart0
+    100176: Particle Mesh_MeshPart1
+    100178: Pincer ASS 01
+    100180: Pincer ASS 02
+    100182: Pincer Frame
+    100184: PM Bucky
+    100186: PM Bucky Group.1
+    100188: PM Bucky Group.2
+    100190: PM Bucky.1
+    100192: PM Bucky.1_MeshPart0
+    100194: PM Bucky.1_MeshPart1
+    100196: PM Bucky_MeshPart0
+    100198: PM Bucky_MeshPart1
+    100200: PM Claws1
+    100202: PM Claws2
+    100204: PM Digits
+    100206: PM Digits.1
+    100208: PM NanoTube 01
+    100210: PM NanoTube 01_MeshPart0
+    100212: PM NanoTube 01_MeshPart1
+    100214: PM NanoTube 02
+    100216: PM NanoTube 02_MeshPart0
+    100218: PM NanoTube 02_MeshPart1
+    100220: PM NanoTube 02_MeshPart2
+    100222: PM NanoTube 02_MeshPart3
+    100224: PM NanoTube 02_MeshPart4
+    100226: PM NanoTube 02_MeshPart5
+    100228: PM Pincers1
+    100230: PM Pincers2
+    100232: PM Slider 1
+    100234: PM Slider 2
+    100236: Pod1
+    100238: Pod1 Ribs
+    100240: Pod2
+    100242: Pod2 Ribs
+    100244: Pods
+    100246: Pods.1
+    100248: PodTower 1
+    100250: PodTower 2
+    100252: PodTower 3
+    100254: PodTower 4
+    100256: PodTowers
+    100258: Poids Ribs
+    100260: Rail 1
+    100262: Rail 2
+    100264: RodCentre
+    100266: RoundedRod
+    100268: Signature
+    100270: "Space Frame \xF8"
+    100272: Spaceframe linear
+    100274: SpaciCopter
+    100276: Sweep
+    100278: Sweep A
+    100280: Sweep B
+    100282: Sweep.1
+    100284: Tanks
+    100286: //RootNode
+    100288: Thumbs
+    100290: Torpedoes
+    100292: Torus
+    100294: Torus main Cover
+    100296: Torus main SF
+    100298: Torus sub.front
+    100300: Torus sub.rear
+    100302: Torus.1
+    100304: Torus.1.1
+    100306: Torus.2
+    100308: UNit
+    100310: Valve 1
+    100312: Valve 1.1
+    100314: ValveSet
+    100316: "\xF8 Tank 1"
+    100318: "\xF8 Tank 2"
+    400000: 8Node
+    400002: 8Node_MeshPart0
+    400004: 8Node_MeshPart1
+    400006: 8Node_MeshPart10
+    400008: 8Node_MeshPart11
+    400010: 8Node_MeshPart12
+    400012: 8Node_MeshPart2
+    400014: 8Node_MeshPart3
+    400016: 8Node_MeshPart4
+    400018: 8Node_MeshPart5
+    400020: 8Node_MeshPart6
+    400022: 8Node_MeshPart7
+    400024: 8Node_MeshPart8
+    400026: 8Node_MeshPart9
+    400028: 'Asembly cyber '
+    400030: Assembly Bubble
+    400032: Assembly Helipods
+    400034: Assembly Helipods.1
+    400036: Assembly Pincer
+    400038: Assembly Pistons
+    400040: Assembly Pods
+    400042: Assembly Rear
+    400044: Assembly Slider
+    400046: Ball
+    400048: Ball.1
+    400050: BASE
+    400052: BaseGrid
+    400054: Box
+    400056: Box.1
+    400058: Bubble Bucky 01
+    400060: Bubble Collar
+    400062: Bubble Helix * 2
+    400064: Capsule
+    400066: Capsule windows
+    400068: Capsule.1
+    400070: Capsule.2
+    400072: Chain
+    400074: CHEETAH
+    400076: CloseUps
+    400078: Command Pod
+    400080: Command Torus
+    400082: ConeR
+    400084: Cones
+    400086: Cones Panels
+    400088: Cylinder
+    400090: Cylinder.1
+    400092: Cylinder.2
+    400094: CylinderSet
+    400096: Diaphragm
+    400098: Disc
+    400100: Extrude
+    400102: Extrude.1
+    400104: Extrude_MeshPart0
+    400106: Extrude_MeshPart1
+    400108: Fin
+    400110: Grid top
+    400112: Grid top.1
+    400114: hexFrame
+    400116: HexTower
+    400118: Loxo NRGee
+    400120: Luge
+    400122: Luge.1
+    400124: Navigator Bubble
+    400126: Onion NRGee
+    400128: ParaboleR
+    400130: Particle Mesh
+    400132: Particle Mesh.1
+    400134: Particle Mesh.1.1
+    400136: Particle Mesh.2
+    400138: Particle Mesh.2.1
+    400140: Particle Mesh.3
+    400142: Particle Mesh.3.1
+    400144: Particle Mesh.4
+    400146: Particle Mesh.4.1
+    400148: Particle Mesh.4_MeshPart0
+    400150: Particle Mesh.4_MeshPart1
+    400152: Particle Mesh.4_MeshPart2
+    400154: Particle Mesh.5
+    400156: Particle Mesh.5.1
+    400158: Particle Mesh.5_MeshPart0
+    400160: Particle Mesh.5_MeshPart1
+    400162: Particle Mesh.6
+    400164: Particle Mesh.6_MeshPart0
+    400166: Particle Mesh.6_MeshPart1
+    400168: Particle Mesh.7
+    400170: Particle Mesh.7_MeshPart0
+    400172: Particle Mesh.7_MeshPart1
+    400174: Particle Mesh_MeshPart0
+    400176: Particle Mesh_MeshPart1
+    400178: Pincer ASS 01
+    400180: Pincer ASS 02
+    400182: Pincer Frame
+    400184: PM Bucky
+    400186: PM Bucky Group.1
+    400188: PM Bucky Group.2
+    400190: PM Bucky.1
+    400192: PM Bucky.1_MeshPart0
+    400194: PM Bucky.1_MeshPart1
+    400196: PM Bucky_MeshPart0
+    400198: PM Bucky_MeshPart1
+    400200: PM Claws1
+    400202: PM Claws2
+    400204: PM Digits
+    400206: PM Digits.1
+    400208: PM NanoTube 01
+    400210: PM NanoTube 01_MeshPart0
+    400212: PM NanoTube 01_MeshPart1
+    400214: PM NanoTube 02
+    400216: PM NanoTube 02_MeshPart0
+    400218: PM NanoTube 02_MeshPart1
+    400220: PM NanoTube 02_MeshPart2
+    400222: PM NanoTube 02_MeshPart3
+    400224: PM NanoTube 02_MeshPart4
+    400226: PM NanoTube 02_MeshPart5
+    400228: PM Pincers1
+    400230: PM Pincers2
+    400232: PM Slider 1
+    400234: PM Slider 2
+    400236: Pod1
+    400238: Pod1 Ribs
+    400240: Pod2
+    400242: Pod2 Ribs
+    400244: Pods
+    400246: Pods.1
+    400248: PodTower 1
+    400250: PodTower 2
+    400252: PodTower 3
+    400254: PodTower 4
+    400256: PodTowers
+    400258: Poids Ribs
+    400260: Rail 1
+    400262: Rail 2
+    400264: RodCentre
+    400266: RoundedRod
+    400268: Signature
+    400270: "Space Frame \xF8"
+    400272: Spaceframe linear
+    400274: SpaciCopter
+    400276: Sweep
+    400278: Sweep A
+    400280: Sweep B
+    400282: Sweep.1
+    400284: Tanks
+    400286: //RootNode
+    400288: Thumbs
+    400290: Torpedoes
+    400292: Torus
+    400294: Torus main Cover
+    400296: Torus main SF
+    400298: Torus sub.front
+    400300: Torus sub.rear
+    400302: Torus.1
+    400304: Torus.1.1
+    400306: Torus.2
+    400308: UNit
+    400310: Valve 1
+    400312: Valve 1.1
+    400314: ValveSet
+    400316: "\xF8 Tank 1"
+    400318: "\xF8 Tank 2"
+    2300000: 8Node_MeshPart0
+    2300002: 8Node_MeshPart1
+    2300004: 8Node_MeshPart10
+    2300006: 8Node_MeshPart11
+    2300008: 8Node_MeshPart12
+    2300010: 8Node_MeshPart2
+    2300012: 8Node_MeshPart3
+    2300014: 8Node_MeshPart4
+    2300016: 8Node_MeshPart5
+    2300018: 8Node_MeshPart6
+    2300020: 8Node_MeshPart7
+    2300022: 8Node_MeshPart8
+    2300024: 8Node_MeshPart9
+    2300026: Ball
+    2300028: Ball.1
+    2300030: Box
+    2300032: Box.1
+    2300034: Bubble Collar
+    2300036: Capsule
+    2300038: Capsule windows
+    2300040: Capsule.1
+    2300042: Capsule.2
+    2300044: Chain
+    2300046: ConeR
+    2300048: Cones
+    2300050: Cones Panels
+    2300052: Cylinder
+    2300054: Cylinder.1
+    2300056: Cylinder.2
+    2300058: Disc
+    2300060: Extrude.1
+    2300062: Extrude_MeshPart0
+    2300064: Extrude_MeshPart1
+    2300066: Fin
+    2300068: Grid top
+    2300070: Grid top.1
+    2300072: hexFrame
+    2300074: Luge
+    2300076: Luge.1
+    2300078: Navigator Bubble
+    2300080: Onion NRGee
+    2300082: ParaboleR
+    2300084: Particle Mesh.1
+    2300086: Particle Mesh.1.1
+    2300088: Particle Mesh.2
+    2300090: Particle Mesh.2.1
+    2300092: Particle Mesh.3
+    2300094: Particle Mesh.3.1
+    2300096: Particle Mesh.4.1
+    2300098: Particle Mesh.4_MeshPart0
+    2300100: Particle Mesh.4_MeshPart1
+    2300102: Particle Mesh.4_MeshPart2
+    2300104: Particle Mesh.5.1
+    2300106: Particle Mesh.5_MeshPart0
+    2300108: Particle Mesh.5_MeshPart1
+    2300110: Particle Mesh.6_MeshPart0
+    2300112: Particle Mesh.6_MeshPart1
+    2300114: Particle Mesh.7_MeshPart0
+    2300116: Particle Mesh.7_MeshPart1
+    2300118: Particle Mesh_MeshPart0
+    2300120: Particle Mesh_MeshPart1
+    2300122: PM Bucky.1_MeshPart0
+    2300124: PM Bucky.1_MeshPart1
+    2300126: PM Bucky_MeshPart0
+    2300128: PM Bucky_MeshPart1
+    2300130: PM Claws1
+    2300132: PM Claws2
+    2300134: PM Digits
+    2300136: PM Digits.1
+    2300138: PM NanoTube 01_MeshPart0
+    2300140: PM NanoTube 01_MeshPart1
+    2300142: PM NanoTube 02_MeshPart0
+    2300144: PM NanoTube 02_MeshPart1
+    2300146: PM NanoTube 02_MeshPart2
+    2300148: PM NanoTube 02_MeshPart3
+    2300150: PM NanoTube 02_MeshPart4
+    2300152: PM NanoTube 02_MeshPart5
+    2300154: PM Pincers1
+    2300156: PM Pincers2
+    2300158: PM Slider 1
+    2300160: PM Slider 2
+    2300162: Pod1
+    2300164: Pod1 Ribs
+    2300166: Pod2
+    2300168: Pod2 Ribs
+    2300170: Pods
+    2300172: Pods.1
+    2300174: Poids Ribs
+    2300176: Rail 1
+    2300178: Rail 2
+    2300180: RodCentre
+    2300182: RoundedRod
+    2300184: "Space Frame \xF8"
+    2300186: Spaceframe linear
+    2300188: Sweep A
+    2300190: Sweep B
+    2300192: Sweep.1
+    2300194: Tanks
+    2300196: Torpedoes
+    2300198: Torus main Cover
+    2300200: Torus main SF
+    2300202: Torus sub.front
+    2300204: Torus sub.rear
+    2300206: Torus.1
+    2300208: Torus.1.1
+    2300210: Torus.2
+    2300212: UNit
+    2300214: Valve 1
+    2300216: Valve 1.1
+    3300000: 8Node_MeshPart0
+    3300002: 8Node_MeshPart1
+    3300004: 8Node_MeshPart10
+    3300006: 8Node_MeshPart11
+    3300008: 8Node_MeshPart12
+    3300010: 8Node_MeshPart2
+    3300012: 8Node_MeshPart3
+    3300014: 8Node_MeshPart4
+    3300016: 8Node_MeshPart5
+    3300018: 8Node_MeshPart6
+    3300020: 8Node_MeshPart7
+    3300022: 8Node_MeshPart8
+    3300024: 8Node_MeshPart9
+    3300026: Ball
+    3300028: Ball.1
+    3300030: Box
+    3300032: Box.1
+    3300034: Bubble Collar
+    3300036: Capsule
+    3300038: Capsule windows
+    3300040: Capsule.1
+    3300042: Capsule.2
+    3300044: Chain
+    3300046: ConeR
+    3300048: Cones
+    3300050: Cones Panels
+    3300052: Cylinder
+    3300054: Cylinder.1
+    3300056: Cylinder.2
+    3300058: Disc
+    3300060: Extrude.1
+    3300062: Extrude_MeshPart0
+    3300064: Extrude_MeshPart1
+    3300066: Fin
+    3300068: Grid top
+    3300070: Grid top.1
+    3300072: hexFrame
+    3300074: Luge
+    3300076: Luge.1
+    3300078: Navigator Bubble
+    3300080: Onion NRGee
+    3300082: ParaboleR
+    3300084: Particle Mesh.1
+    3300086: Particle Mesh.1.1
+    3300088: Particle Mesh.2
+    3300090: Particle Mesh.2.1
+    3300092: Particle Mesh.3
+    3300094: Particle Mesh.3.1
+    3300096: Particle Mesh.4.1
+    3300098: Particle Mesh.4_MeshPart0
+    3300100: Particle Mesh.4_MeshPart1
+    3300102: Particle Mesh.4_MeshPart2
+    3300104: Particle Mesh.5.1
+    3300106: Particle Mesh.5_MeshPart0
+    3300108: Particle Mesh.5_MeshPart1
+    3300110: Particle Mesh.6_MeshPart0
+    3300112: Particle Mesh.6_MeshPart1
+    3300114: Particle Mesh.7_MeshPart0
+    3300116: Particle Mesh.7_MeshPart1
+    3300118: Particle Mesh_MeshPart0
+    3300120: Particle Mesh_MeshPart1
+    3300122: PM Bucky.1_MeshPart0
+    3300124: PM Bucky.1_MeshPart1
+    3300126: PM Bucky_MeshPart0
+    3300128: PM Bucky_MeshPart1
+    3300130: PM Claws1
+    3300132: PM Claws2
+    3300134: PM Digits
+    3300136: PM Digits.1
+    3300138: PM NanoTube 01_MeshPart0
+    3300140: PM NanoTube 01_MeshPart1
+    3300142: PM NanoTube 02_MeshPart0
+    3300144: PM NanoTube 02_MeshPart1
+    3300146: PM NanoTube 02_MeshPart2
+    3300148: PM NanoTube 02_MeshPart3
+    3300150: PM NanoTube 02_MeshPart4
+    3300152: PM NanoTube 02_MeshPart5
+    3300154: PM Pincers1
+    3300156: PM Pincers2
+    3300158: PM Slider 1
+    3300160: PM Slider 2
+    3300162: Pod1
+    3300164: Pod1 Ribs
+    3300166: Pod2
+    3300168: Pod2 Ribs
+    3300170: Pods
+    3300172: Pods.1
+    3300174: Poids Ribs
+    3300176: Rail 1
+    3300178: Rail 2
+    3300180: RodCentre
+    3300182: RoundedRod
+    3300184: "Space Frame \xF8"
+    3300186: Spaceframe linear
+    3300188: Sweep A
+    3300190: Sweep B
+    3300192: Sweep.1
+    3300194: Tanks
+    3300196: Torpedoes
+    3300198: Torus main Cover
+    3300200: Torus main SF
+    3300202: Torus sub.front
+    3300204: Torus sub.rear
+    3300206: Torus.1
+    3300208: Torus.1.1
+    3300210: Torus.2
+    3300212: UNit
+    3300214: Valve 1
+    3300216: Valve 1.1
+    4300000: Torus.1
+    4300002: PM NanoTube 01_MeshPart0
+    4300004: PM NanoTube 01_MeshPart1
+    4300006: PM NanoTube 02_MeshPart0
+    4300008: PM NanoTube 02_MeshPart1
+    4300010: PM NanoTube 02_MeshPart2
+    4300012: PM NanoTube 02_MeshPart3
+    4300014: PM NanoTube 02_MeshPart4
+    4300016: PM NanoTube 02_MeshPart5
+    4300018: Extrude_MeshPart0
+    4300020: Extrude_MeshPart1
+    4300022: Chain
+    4300024: Particle Mesh_MeshPart0
+    4300026: Particle Mesh_MeshPart1
+    4300028: Onion NRGee
+    4300030: "Space Frame \xF8"
+    4300032: Sweep A
+    4300034: Sweep B
+    4300036: Bubble Collar
+    4300038: Navigator Bubble
+    4300040: 8Node_MeshPart0
+    4300042: 8Node_MeshPart1
+    4300044: 8Node_MeshPart2
+    4300046: 8Node_MeshPart3
+    4300048: 8Node_MeshPart4
+    4300050: 8Node_MeshPart5
+    4300052: 8Node_MeshPart6
+    4300054: 8Node_MeshPart7
+    4300056: 8Node_MeshPart8
+    4300058: 8Node_MeshPart9
+    4300060: 8Node_MeshPart10
+    4300062: 8Node_MeshPart11
+    4300064: 8Node_MeshPart12
+    4300066: Torus.1.1
+    4300068: RodCentre
+    4300070: Cylinder
+    4300072: RoundedRod
+    4300074: Valve 1
+    4300076: Valve 1.1
+    4300078: UNit
+    4300080: Torus.2
+    4300082: Disc
+    4300084: Capsule
+    4300086: Capsule windows
+    4300088: Fin
+    4300090: ConeR
+    4300092: ParaboleR
+    4300094: Torus main SF
+    4300096: Torus main Cover
+    4300098: Torus sub.front
+    4300100: Torus sub.rear
+    4300102: Torpedoes
+    4300104: Pods
+    4300106: Capsule.1
+    4300108: Box
+    4300110: Particle Mesh.1
+    4300112: Pods.1
+    4300114: Poids Ribs
+    4300116: Capsule.2
+    4300118: Box.1
+    4300120: Cones
+    4300122: Cones Panels
+    4300124: Ball
+    4300126: Cylinder.1
+    4300128: Ball.1
+    4300130: Cylinder.2
+    4300132: Particle Mesh.2
+    4300134: Grid top
+    4300136: PM Bucky_MeshPart0
+    4300138: PM Bucky_MeshPart1
+    4300140: PM Bucky.1_MeshPart0
+    4300142: PM Bucky.1_MeshPart1
+    4300144: Particle Mesh.3
+    4300146: Grid top.1
+    4300148: Particle Mesh.4_MeshPart0
+    4300150: Particle Mesh.4_MeshPart1
+    4300152: Particle Mesh.4_MeshPart2
+    4300154: Particle Mesh.3.1
+    4300156: Particle Mesh.5_MeshPart0
+    4300158: Particle Mesh.5_MeshPart1
+    4300160: Particle Mesh.2.1
+    4300162: Particle Mesh.6_MeshPart0
+    4300164: Particle Mesh.6_MeshPart1
+    4300166: Particle Mesh.4.1
+    4300168: Particle Mesh.7_MeshPart0
+    4300170: Particle Mesh.7_MeshPart1
+    4300172: Particle Mesh.5.1
+    4300174: hexFrame
+    4300176: Particle Mesh.1.1
+    4300178: Luge
+    4300180: Sweep.1
+    4300182: Extrude.1
+    4300184: PM Slider 1
+    4300186: PM Slider 2
+    4300188: Spaceframe linear
+    4300190: Rail 1
+    4300192: Rail 2
+    4300194: Luge.1
+    4300196: Tanks
+    4300198: Pod1
+    4300200: Pod1 Ribs
+    4300202: PM Pincers1
+    4300204: PM Claws1
+    4300206: PM Digits
+    4300208: Pod2
+    4300210: Pod2 Ribs
+    4300212: PM Pincers2
+    4300214: PM Claws2
+    4300216: PM Digits.1
+    7400000: Take 0
+    9500000: //RootNode
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material
+    second: {fileID: 2100000, guid: c777a9bd092324217bbfcfc76ffb7fab, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Metal 1
+    second: {fileID: 2100000, guid: 88a86f38dfe5743f8bfbe0ec5f9d3e4f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Metal 2
+    second: {fileID: 2100000, guid: 93362b9de76524e7497f6641789139f5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: No Name
+    second: {fileID: 2100000, guid: 5113e1d20dac94368a9bd979f4e35bcc, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Trusses
+    second: {fileID: 2100000, guid: cf8971734df20476e8bc7ca31095c061, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: WindowGlassRefl
+    second: {fileID: 2100000, guid: 3d0b3af202f9343428f4c2d414b4bc0e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: blue
+    second: {fileID: 2100000, guid: 75cd9f37687db4c2299ebd523c898029, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: blue membrane
+    second: {fileID: 2100000, guid: 303a14f21c6b74d17bc06e2acbceacc8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: blue radiant
+    second: {fileID: 2100000, guid: 5892870db007e4a1aad53c9342358a07, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: red gloss
+    second: {fileID: 2100000, guid: 1779e0fdd93da48a99b8e1c3172514a4, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: wireframe
+    second: {fileID: 2100000, guid: 3d4ee21640c7648fe99e5443361da536, type: 2}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 0
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
