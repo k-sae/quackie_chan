@@ -225,6 +225,11 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &77150120 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1296335307086684, guid: f5e1bc623803e41768ab6124b4e88c9d,
+    type: 2}
+  m_PrefabInternal: {fileID: 1622055525}
 --- !u!1 &343285693
 GameObject:
   m_ObjectHideFlags: 0
@@ -615,6 +620,16 @@ Prefab:
       propertyPath: subtitles
       value: 
       objectReference: {fileID: 1308629627}
+    - target: {fileID: 114534330800450934, guid: f5e1bc623803e41768ab6124b4e88c9d,
+        type: 2}
+      propertyPath: mouseLook.MinimumX
+      value: -45
+      objectReference: {fileID: 0}
+    - target: {fileID: 114534330800450934, guid: f5e1bc623803e41768ab6124b4e88c9d,
+        type: 2}
+      propertyPath: pivot
+      value: 
+      objectReference: {fileID: 77150120}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f5e1bc623803e41768ab6124b4e88c9d, type: 2}
   m_IsPrefabParent: 0

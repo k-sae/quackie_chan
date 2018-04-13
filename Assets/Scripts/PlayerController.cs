@@ -6,6 +6,7 @@ using UnityStandardAssets.Characters.FirstPerson;
 public class PlayerController : MonoBehaviour {
 
 	[SerializeField] private Camera cam;
+	[SerializeField] private GameObject pivot;
 	[SerializeField] private MouseLook mouseLook;
 	[SerializeField] private float walkSpeed = 5f;
 	[SerializeField] private float runSpeed = 10f;
@@ -27,7 +28,7 @@ public class PlayerController : MonoBehaviour {
 	{
 		rb = GetComponent<Rigidbody>();
 		anim = GetComponent<Animator>();
-		mouseLook.Init(transform , cam.transform);
+		mouseLook.Init(transform, pivot.transform);
 	}
 
 	void Update ()
@@ -106,7 +107,7 @@ public class PlayerController : MonoBehaviour {
 	{
 		PerformMovement();
 		mouseLook.UpdateCursorLock();
-		isGrounded = Physics.Raycast(transform.position, Vector3.down, 1f) || (rb.velocity.y <= 0.08f && rb.velocity.y >= -0.08f);
+		isGrounded = Physics.Raycast(transform.position, Vector3.down, 1f) || (rb.velocity.y <= 0.05f && rb.velocity.y >= -0.05f);
 	}
 
 	// Perform movement based on velocity variable
@@ -126,7 +127,7 @@ public class PlayerController : MonoBehaviour {
 	// Gets a rotational vector for the camera
 	void RotateView()
 	{
-		mouseLook.LookRotation(transform, cam.transform);
+		mouseLook.LookRotation(transform, pivot.transform);
 	}
 
 	void movementControl(string state)
