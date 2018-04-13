@@ -14,65 +14,85 @@ public class PlayerController : MonoBehaviour {
 	[SerializeField] private float flyingFuelRegenSpeed = 0.3f;
 
 	private float flyingFuelAmount = 1f;
+	private bool isStanding = true;
 	private bool isGrounded = true;
 	private bool isRunning = false;
 	private bool isFlying = false;
 	private Vector3 velocity = Vector3.zero;
 	private Vector3 flyingForce = Vector3.zero;
-	private Animator animator;
+	private Animator anim;
 	private Rigidbody rb;
 
 	void Start ()
 	{
 		rb = GetComponent<Rigidbody>();
-		animator = GetComponent<Animator>();
+		anim = GetComponent<Animator>();
 		mouseLook.Init(transform , cam.transform);
 	}
 
 	void Update ()
 	{
-		//Calculate movement velocity as a 3D vector
-		float x = Input.GetAxis("Horizontal");
-		float z = Input.GetAxis("Vertical");
-		isRunning = Input.GetKey(KeyCode.LeftShift);
-
-		Vector3 horizontal = transform.right * x;
-		Vector3 vertical = transform.forward * z;
-
-		float speed = isRunning ? runSpeed : walkSpeed;
-
-		// Final movement vector
-		velocity = (horizontal + vertical) * speed;
-
-		// Rotate the camera
-		RotateView();
-
-		// Calculate the flyingforce based on player input		
-		if (Input.GetButton("Jump") && flyingFuelAmount > 0f)
+		isStanding = anim.GetCurrentAnimatorStateInfo(0).IsName("Standing Up");
+		if (!isStanding)
 		{
-			flyingFuelAmount -= flyingFuelBurnSpeed * Time.deltaTime;
+			//Calculate movement velocity as a 3D vector
+			float x = Input.GetAxis("Horizontal");
+			float z = Input.GetAxis("Vertical");
+			isRunning = Input.GetKey(KeyCode.LeftShift);
 
-			if (flyingFuelAmount >= 0.01f)
-			{
-				flyingForce = Vector3.up * flyingHeight;
-				isFlying = true;
-			}
+			Vector3 horizontal = transform.right * x;
+			Vector3 vertical = transform.forward * z;
 
-		} else
-		{
-			flyingForce = Vector3.zero;
-			isFlying = false;
-			if(isGrounded)
+			float speed = isRunning ? runSpeed : walkSpeed;
+
+			// Final movement vector
+			velocity = (horizontal + vertical) * speed;
+
+			// Rotate the camera
+			RotateView();
+
+			// Calculate the flyingforce based on player input		
+			if (Input.GetButton("Jump") && flyingFuelAmount > 0f)
 			{
-				flyingFuelAmount = 1f;
+				flyingFuelAmount -= flyingFuelBurnSpeed * Time.deltaTime;
+
+				if (flyingFuelAmount >= 0.01f)
+				{
+					flyingForce = Vector3.up * flyingHeight;
+					isFlying = true;
+				}
+
 			} else
 			{
-				flyingFuelAmount += flyingFuelRegenSpeed * Time.deltaTime;
+				flyingForce = Vector3.zero;
+				isFlying = false;
+
+				if (isGrounded)
+				{
+					flyingFuelAmount = 1f;
+				} else
+				{
+					flyingFuelAmount += flyingFuelRegenSpeed * Time.deltaTime;
+				}
+			}
+
+			flyingFuelAmount = Mathf.Clamp(flyingFuelAmount, 0f, 1f);
+
+			// Play animation clips upon action
+			if (z > 0 && isRunning)
+			{
+				movementControl("RunningForward");
+			} else if (z > 0) 
+			{
+				movementControl("WalkingForward");
+			} else if (z < 0) 
+			{
+				movementControl("WalkingBackward");
+			} else
+			{
+				movementControl("idle");
 			}
 		}
-
-		flyingFuelAmount = Mathf.Clamp(flyingFuelAmount, 0f, 1f);
-
 	}
 
 	// Run every physics iteration
@@ -98,8 +118,40 @@ public class PlayerController : MonoBehaviour {
 	}
 
 	// Gets a rotational vector for the camera
-	public void RotateView()
+	void RotateView()
 	{
 		mouseLook.LookRotation(transform, cam.transform);
+	}
+
+	void movementControl(string state)
+	{
+		switch (state)
+		{
+			case "RunningForward":
+				anim.SetBool("isRunningForward", true);
+				anim.SetBool("isWalkingForward", false);
+				anim.SetBool("isWalkingBackward", false);
+				anim.SetBool("isIdle", false);
+				break;
+			case "WalkingForward":
+				anim.SetBool("isRunningForward", false);
+				anim.SetBool("isWalkingForward", true);
+				anim.SetBool("isWalkingBackward", false);
+				anim.SetBool("isIdle", false);
+				break;
+			case "WalkingBackward":
+				anim.SetBool("isRunningForward", false);
+				anim.SetBool("isWalkingForward", false);
+				anim.SetBool("isWalkingBackward", true);
+				anim.SetBool("isIdle", false);
+				break;
+			case "idle":
+				anim.SetBool("isRunningForward", false);
+				anim.SetBool("isWalkingForward", false);
+				anim.SetBool("isWalkingBackward", false);
+				anim.SetBool("isIdle", true);
+				break;
+		}
+
 	}
 }
