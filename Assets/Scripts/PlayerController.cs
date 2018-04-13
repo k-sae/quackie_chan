@@ -67,7 +67,7 @@ public class PlayerController : MonoBehaviour {
 				flyingForce = Vector3.zero;
 				isFlying = false;
 
-				if (isGrounded)
+				if (isGrounded && !isFlying)
 				{
 					flyingFuelAmount = 1f;
 				} else
@@ -79,7 +79,13 @@ public class PlayerController : MonoBehaviour {
 			flyingFuelAmount = Mathf.Clamp(flyingFuelAmount, 0f, 1f);
 
 			// Play animation clips upon action
-			if (z > 0 && isRunning)
+			if (isFlying) 
+			{
+				movementControl("Flying");
+			} else if (!isFlying && !isGrounded) 
+			{
+				movementControl("Falling");
+			} else if (z > 0 && isRunning)
 			{
 				movementControl("RunningForward");
 			} else if (z > 0) 
@@ -100,7 +106,7 @@ public class PlayerController : MonoBehaviour {
 	{
 		PerformMovement();
 		mouseLook.UpdateCursorLock();
-		isGrounded = Physics.Raycast(transform.position, Vector3.down, 1f) || (rb.velocity.y <= 0.1 && rb.velocity.y >= -0.1);
+		isGrounded = Physics.Raycast(transform.position, Vector3.down, 1f) || (rb.velocity.y <= 0.08f && rb.velocity.y >= -0.08f);
 	}
 
 	// Perform movement based on velocity variable
@@ -131,24 +137,48 @@ public class PlayerController : MonoBehaviour {
 				anim.SetBool("isRunningForward", true);
 				anim.SetBool("isWalkingForward", false);
 				anim.SetBool("isWalkingBackward", false);
+				anim.SetBool("isFlying", false);
+				anim.SetBool("isFalling", false);
 				anim.SetBool("isIdle", false);
 				break;
 			case "WalkingForward":
 				anim.SetBool("isRunningForward", false);
 				anim.SetBool("isWalkingForward", true);
 				anim.SetBool("isWalkingBackward", false);
+				anim.SetBool("isFlying", false);
+				anim.SetBool("isFalling", false);
 				anim.SetBool("isIdle", false);
 				break;
 			case "WalkingBackward":
 				anim.SetBool("isRunningForward", false);
 				anim.SetBool("isWalkingForward", false);
 				anim.SetBool("isWalkingBackward", true);
+				anim.SetBool("isFlying", false);
+				anim.SetBool("isFalling", false);
+				anim.SetBool("isIdle", false);
+				break;
+			case "Flying":
+				anim.SetBool("isRunningForward", false);
+				anim.SetBool("isWalkingForward", false);
+				anim.SetBool("isWalkingBackward", false);
+				anim.SetBool("isFlying", true);
+				anim.SetBool("isFalling", false);
+				anim.SetBool("isIdle", false);
+				break;
+			case "Falling":
+				anim.SetBool("isRunningForward", false);
+				anim.SetBool("isWalkingForward", false);
+				anim.SetBool("isWalkingBackward", false);
+				anim.SetBool("isFlying", false);
+				anim.SetBool("isFalling", true);
 				anim.SetBool("isIdle", false);
 				break;
 			case "idle":
 				anim.SetBool("isRunningForward", false);
 				anim.SetBool("isWalkingForward", false);
 				anim.SetBool("isWalkingBackward", false);
+				anim.SetBool("isFlying", false);
+				anim.SetBool("isFalling", false);
 				anim.SetBool("isIdle", true);
 				break;
 		}
