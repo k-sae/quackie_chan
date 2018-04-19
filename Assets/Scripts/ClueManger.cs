@@ -9,23 +9,22 @@ public class ClueManger : MonoBehaviour {
 	private Vector3 DBPPL;//diffrent Between postion of  player  and  letter  posion
 	// Use this for initialization
 	void Start () {
-		timeWatch = 0;
+		
 		showText ("");
 
 	}
 	
 	// Update is called once per frame
 	void Update () {
-		if (timeWatch < 500) {
-			timeWatch++;
-		}
+		
 
-		if (timeWatch == 250) {
-			showText ("go to duck home to check your children");
-		} else if (timeWatch == 490) {
+
+		if (Time.time < 11 && Time.time  > 6) {
+			showText ("go to duck home to check your children" );
+		} else if (Time.time  == 11) {
 			showText ("");
 		}
-		if(timeWatch >490){
+		if(Time.time >11){
 			DBPPL = GameObject.FindGameObjectWithTag("Player").transform.position - GameObject.FindGameObjectWithTag("letter").transform.position;
 			if (  -1.3 < DBPPL [2] &&  DBPPL [2] < 1.3) {
 				showText ("your children is kidnapped , go  to  high place to look  of  them ");
