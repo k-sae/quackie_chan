@@ -40,10 +40,10 @@ public class ClueManger : MonoBehaviour {
 					if (player [2] > -29 && player [2] < -25) {
 						showText ("go to car to check  childern");
 					} else {
-						if (player [2] < 70 && player [2] > 66 && player [1] > .8) {
+						if (player [2] < 70 && player [2] > 66 && player [1] > .8 && player [1] < 3&& player [0] < -12 && player [0] > -16) {
 							showText ("press f to go to the next ");
 						} else {
-							showText (player + "");
+							showText ( "");
 						}
 					}
 				}
