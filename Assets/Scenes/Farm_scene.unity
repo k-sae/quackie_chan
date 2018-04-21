@@ -190,12 +190,12 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 90346766}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 17, y: 1.2, z: 83}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 37.4, y: 1.2, z: 83}
   m_LocalScale: {x: 0.3, y: 0.3, z: 0.3}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_Father: {fileID: 234144996}
+  m_RootOrder: 96
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &234144994 stripped
 GameObject:
@@ -215,6 +215,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sceneNames:
   - Spooky_forest
+--- !u!4 &234144996 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 4878737968164784, guid: 5de5fc5ab0fa6415c8f19ad58fb2885d,
+    type: 2}
+  m_PrefabInternal: {fileID: 1341426045}
 --- !u!1 &477890561
 GameObject:
   m_ObjectHideFlags: 0
@@ -416,6 +421,10 @@ Prefab:
     - target: {fileID: 4878737968164784, guid: 5de5fc5ab0fa6415c8f19ad58fb2885d, type: 2}
       propertyPath: m_LocalPosition.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1015208972895526, guid: 5de5fc5ab0fa6415c8f19ad58fb2885d, type: 2}
+      propertyPath: m_TagString
+      value: clue_filed
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 5de5fc5ab0fa6415c8f19ad58fb2885d, type: 2}
