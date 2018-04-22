@@ -95,6 +95,12 @@ public class PlayerController : MonoBehaviour {
 			} else if (z < 0) 
 			{
 				movementControl("WalkingBackward");
+			} else if (x < 0) 
+			{
+				movementControl("WalkingLeft");
+			} else if (x > 0) 
+			{
+				movementControl("WalkingRight");
 			} else
 			{
 				movementControl("idle");
@@ -138,6 +144,8 @@ public class PlayerController : MonoBehaviour {
 				anim.SetBool("isRunningForward", true);
 				anim.SetBool("isWalkingForward", false);
 				anim.SetBool("isWalkingBackward", false);
+				anim.SetBool("isWalkingLeft", false);
+				anim.SetBool("isWalkingRight", false);
 				anim.SetBool("isFlying", false);
 				anim.SetBool("isFalling", false);
 				anim.SetBool("isIdle", false);
@@ -146,6 +154,8 @@ public class PlayerController : MonoBehaviour {
 				anim.SetBool("isRunningForward", false);
 				anim.SetBool("isWalkingForward", true);
 				anim.SetBool("isWalkingBackward", false);
+				anim.SetBool("isWalkingLeft", false);
+				anim.SetBool("isWalkingRight", false);
 				anim.SetBool("isFlying", false);
 				anim.SetBool("isFalling", false);
 				anim.SetBool("isIdle", false);
@@ -154,6 +164,28 @@ public class PlayerController : MonoBehaviour {
 				anim.SetBool("isRunningForward", false);
 				anim.SetBool("isWalkingForward", false);
 				anim.SetBool("isWalkingBackward", true);
+				anim.SetBool("isWalkingLeft", false);
+				anim.SetBool("isWalkingRight", false);
+				anim.SetBool("isFlying", false);
+				anim.SetBool("isFalling", false);
+				anim.SetBool("isIdle", false);
+				break;
+			case "WalkingLeft":
+				anim.SetBool("isRunningForward", false);
+				anim.SetBool("isWalkingForward", false);
+				anim.SetBool("isWalkingBackward", false);
+				anim.SetBool("isWalkingLeft", true);
+				anim.SetBool("isWalkingRight", false);
+				anim.SetBool("isFlying", false);
+				anim.SetBool("isFalling", false);
+				anim.SetBool("isIdle", false);
+				break;
+			case "WalkingRight":
+				anim.SetBool("isRunningForward", false);
+				anim.SetBool("isWalkingForward", false);
+				anim.SetBool("isWalkingBackward", false);
+				anim.SetBool("isWalkingLeft", false);
+				anim.SetBool("isWalkingRight", true);
 				anim.SetBool("isFlying", false);
 				anim.SetBool("isFalling", false);
 				anim.SetBool("isIdle", false);
@@ -162,6 +194,8 @@ public class PlayerController : MonoBehaviour {
 				anim.SetBool("isRunningForward", false);
 				anim.SetBool("isWalkingForward", false);
 				anim.SetBool("isWalkingBackward", false);
+				anim.SetBool("isWalkingLeft", false);
+				anim.SetBool("isWalkingRight", false);
 				anim.SetBool("isFlying", true);
 				anim.SetBool("isFalling", false);
 				anim.SetBool("isIdle", false);
@@ -170,6 +204,8 @@ public class PlayerController : MonoBehaviour {
 				anim.SetBool("isRunningForward", false);
 				anim.SetBool("isWalkingForward", false);
 				anim.SetBool("isWalkingBackward", false);
+				anim.SetBool("isWalkingLeft", false);
+				anim.SetBool("isWalkingRight", false);
 				anim.SetBool("isFlying", false);
 				anim.SetBool("isFalling", true);
 				anim.SetBool("isIdle", false);
@@ -178,6 +214,8 @@ public class PlayerController : MonoBehaviour {
 				anim.SetBool("isRunningForward", false);
 				anim.SetBool("isWalkingForward", false);
 				anim.SetBool("isWalkingBackward", false);
+				anim.SetBool("isWalkingLeft", false);
+				anim.SetBool("isWalkingRight", false);
 				anim.SetBool("isFlying", false);
 				anim.SetBool("isFalling", false);
 				anim.SetBool("isIdle", true);
