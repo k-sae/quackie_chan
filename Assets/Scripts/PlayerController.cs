@@ -113,7 +113,7 @@ public class PlayerController : MonoBehaviour {
 	{
 		PerformMovement();
 		mouseLook.UpdateCursorLock();
-		isGrounded = Physics.Raycast(transform.position, Vector3.down, 1f) || (rb.velocity.y <= 0.05f && rb.velocity.y >= -0.05f);
+		isGrounded = Physics.Raycast(transform.position, Vector3.down, 0.5f) || (rb.velocity.y <= 0.05f && rb.velocity.y >= -0.05f);
 	}
 
 	// Perform movement based on velocity variable
