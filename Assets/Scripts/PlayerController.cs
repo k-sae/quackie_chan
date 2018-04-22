@@ -44,7 +44,7 @@ public class PlayerController : MonoBehaviour {
 			Vector3 horizontal = transform.right * x;
 			Vector3 vertical = transform.forward * z;
 
-			float speed = isRunning ? runSpeed : walkSpeed;
+			float speed = (isRunning && z > 0) ? runSpeed : walkSpeed;
 
 			// Final movement vector
 			velocity = (horizontal + vertical) * speed;
