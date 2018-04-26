@@ -88,6 +88,7 @@ LightmapSettings:
     m_PVRFilteringAtrousPositionSigmaDirect: 0.5
     m_PVRFilteringAtrousPositionSigmaIndirect: 2
     m_PVRFilteringAtrousPositionSigmaAO: 1
+    m_ShowResolutionOverlay: 1
   m_LightingDataAsset: {fileID: 0}
   m_UseShadowmask: 1
 --- !u!196 &4
@@ -335,15 +336,47 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4878737968164784, guid: 5de5fc5ab0fa6415c8f19ad58fb2885d, type: 2}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: -42.1
       objectReference: {fileID: 0}
     - target: {fileID: 1015208972895526, guid: 5de5fc5ab0fa6415c8f19ad58fb2885d, type: 2}
       propertyPath: m_TagString
       value: clue_filed
       objectReference: {fileID: 0}
+    - target: {fileID: 4878737968164784, guid: 5de5fc5ab0fa6415c8f19ad58fb2885d, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -1.4
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 5de5fc5ab0fa6415c8f19ad58fb2885d, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &1606550192
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1606550193}
+  m_Layer: 0
+  m_Name: Farm_Node
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1606550193
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1606550192}
+  m_LocalRotation: {x: -0.558461, y: -0.43372953, z: -0.43372953, w: 0.55846107}
+  m_LocalPosition: {x: 9314.821, y: -2.2600098, z: 58}
+  m_LocalScale: {x: 23903.842, y: 12049.488, z: 3210.1133}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2025492567
 GameObject:
   m_ObjectHideFlags: 0
