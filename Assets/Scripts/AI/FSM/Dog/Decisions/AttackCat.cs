@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using AiManager;
 using UnityEngine;
 
@@ -7,9 +8,11 @@ namespace AI.FSM
     {
         public override bool Decide(AiComponentController controller)
         {
-            if (controller.isChaseing){
-                Transform target = controller.chasing;
-            }
+            List<AiComponent> agents = controller.getAgentsInRange(controller.brain.getSensorRange());
+            if(agents.Count>1)
+            foreach(AiComponent agent in agents)
+                if(agent.getController().tag == "CAT")
+                return true;
             return false;
         }
     }

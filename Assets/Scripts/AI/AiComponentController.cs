@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using AI.FSM;
 using UnityEngine;
 using UnityEngine.AI;
@@ -45,6 +46,16 @@ namespace AiManager
 
     public void updateState(){
         this.currentState.UpdateState(this);
+    }
+
+    public List<AiComponent> getAgentsInRange(float range){
+        List<AiComponent> temp = new List<AiComponent>();
+        foreach (AiComponent agent in brain.getAgents()){
+            if(Vector3.Distance(transform.position,agent.getController().transform.position)<=range){
+                temp.Add(agent);
+            }
+        }
+        return temp;
     }
 
         
