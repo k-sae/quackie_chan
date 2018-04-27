@@ -11,24 +11,26 @@ namespace AiManager
         Car = 2
     }
     public class AiComponentManager : AiComponentTracker{
-    private List<AiComponent> componentsList;
+    private List<AiComponentSensor> componentsList;
      public Collider node;
      public AiComponentManager(Collider node) {
-         componentsList = new List<AiComponent>();
+         componentsList = new List<AiComponentSensor>();
          this.node = node;
      }
-     public void registerComponent(AiComponent component){
+     public void registerComponent(AiComponentSensor component){
          
          this.componentsList.Add(component);
      }
-     public void unregisterComponent(AiComponent component){
+     public void unregisterComponent(AiComponentSensor component){
         
                 if(this.componentsList.Contains(component))
                     this.componentsList.Remove(component);
                 
      }
-     public void notifyOnMove(Vector3 position){
-         
+     public void notifyOnMove(){
+         foreach (AiComponentSensor agent in componentsList){
+             
+         }
      }  
  
    

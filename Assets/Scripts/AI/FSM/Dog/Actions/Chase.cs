@@ -7,6 +7,8 @@ namespace AI.FSM
        
         public override void Act(AiComponentController controller)
         {
+            if (controller.isChaseing){}
+            //controller;
         }
     }
 }

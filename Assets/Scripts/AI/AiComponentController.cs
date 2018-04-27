@@ -1,19 +1,28 @@
 using AI.FSM;
 using UnityEngine;
+using UnityEngine.AI;
+
 namespace AiManager
 {
-    public class AiComponentController : MonoBehaviour
+    public  class AiComponentController : MonoBehaviour
     {
-        private AiComponent brain;
+        [HideInInspector] public AiComponent brain;
         private AiComponentManager associatedNodeManager;
         public AiNodeController nodeController;
          public State currentState;
-         private Transform chasing;
-         private Transform chaser;
-    [HideInInspector] public float statePassedTime;
+          [HideInInspector] public  Transform chasing;
+          [HideInInspector] public  Transform chaser;
+         [HideInInspector] public float statePassedTime;
+         [HideInInspector] public  bool isChaseing;
+         [HideInInspector] public  bool isChased;
+         [HideInInspector] public  bool isAttack;
+         [HideInInspector] public  bool isWalk;
+         [HideInInspector] public  bool isRest;
+         [HideInInspector] public NavMeshAgent navMeshAgent;
             private void Start() {
             this.associatedNodeManager = nodeController.getAiManager();
-            this.brain = new AiComponent(this.associatedNodeManager);
+            this.brain = new AiComponent(this.associatedNodeManager,this);
+            this.navMeshAgent = GetComponent<NavMeshAgent>();
         }
         private void Update() {
            currentState.UpdateState (this);
@@ -32,6 +41,10 @@ namespace AiManager
     private void OnExitState()
     {
         statePassedTime = 0;
+    }
+
+    public void updateState(){
+        this.currentState.UpdateState(this);
     }
 
         

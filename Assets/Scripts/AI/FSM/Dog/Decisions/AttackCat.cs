@@ -1,4 +1,5 @@
 using AiManager;
+using UnityEngine;
 
 namespace AI.FSM
 {
@@ -6,6 +7,9 @@ namespace AI.FSM
     {
         public override bool Decide(AiComponentController controller)
         {
+            if (controller.isChaseing){
+                Transform target = controller.chasing;
+            }
             return false;
         }
     }
