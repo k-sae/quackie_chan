@@ -2,7 +2,7 @@ using UnityEngine;
 using System.Collections.Generic;
 namespace AiManager
 {
-    public class AiComponent:AiComponentSensor
+    public class AiComponent
     {
      private Vector3 position;
      private AiComponentManager aiComponentManager;
