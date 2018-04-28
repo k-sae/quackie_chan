@@ -27,7 +27,6 @@ namespace AI.FSM
         for (int i = 0; i < transitions.Length; i++) 
         {
             bool decisionSucceeded = transitions[i].decision.Decide (controller);
-
             if (decisionSucceeded) {
                 controller.TransitionToState (transitions[i].trueState);
             } else 

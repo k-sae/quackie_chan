@@ -12,4 +12,10 @@ MonoBehaviour:
   m_Name: WalkDog
   m_EditorClassIdentifier: 
   actions: []
-  transitions: []
+  transitions:
+  - decision: {fileID: 11400000, guid: 81894450546024ec9bf34ff63ff3a37f, type: 2}
+    trueState: {fileID: 11400000, guid: 3b49374c1aa14410e8edb3d631ce2939, type: 2}
+    falseState: {fileID: 11400000}
+  - decision: {fileID: 11400000, guid: 0b71b90f1491f473da6dd7b59d27ae68, type: 2}
+    trueState: {fileID: 11400000, guid: 157af703fcb46484b9ba918da538494c, type: 2}
+    falseState: {fileID: 0}

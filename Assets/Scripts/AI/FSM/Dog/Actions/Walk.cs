@@ -8,6 +8,8 @@ namespace AI.FSM
     {
         public override void Act(AiComponentController controller)
         {
+            Vector3 point = controller.getRandomMovementPoint();
+            controller.navMeshAgent.SetDestination(point);
         }
     }
 }

@@ -36,8 +36,9 @@ namespace AiManager
         }
         public void TransitionToState(State nextState)
     {
-        if (nextState != currentState) 
+        if (nextState!=null && nextState != currentState) 
         {
+            Debug.Log(nextState);
             currentState = nextState;
             OnExitState ();
         }
