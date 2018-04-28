@@ -21,7 +21,8 @@ public class HenClue : MonoBehaviour {
 		}
 	}
 	void OnTriggerExit(Collider other)
-	{
+	{time = 0;
+		
 		subtitles.text = "";
 		subtitles2.text = "";
 	}
