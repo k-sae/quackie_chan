@@ -12,7 +12,6 @@ namespace AI.FSM
                 //TODO: start attack animation 
                 //TODO: call the damage script onthe target 
             //}      
-            Debug.Log("وحياه امك تعمل اتاك");
            if(controller.chasing!=null)
             controller.navMeshAgent.SetDestination(controller.chasing.position);     
         }

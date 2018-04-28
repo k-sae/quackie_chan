@@ -9,10 +9,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 345bd2e8e9e9f45a5b75c37f0c461f2b, type: 3}
-  m_Name: walk
+  m_Name: walkCat
   m_EditorClassIdentifier: 
-  actions: []
+  actions:
+  - {fileID: 11400000, guid: f0f418b89cbdd4e90a2d2455294daf71, type: 2}
   transitions:
   - decision: {fileID: 11400000, guid: 069512be76bb549f49a77c7c82908bf9, type: 2}
     trueState: {fileID: 11400000, guid: f01ed164252a34c199042e4c945d43fc, type: 2}
     falseState: {fileID: 11400000}
+  - decision: {fileID: 11400000, guid: 81894450546024ec9bf34ff63ff3a37f, type: 2}
+    trueState: {fileID: 11400000, guid: 3b49374c1aa14410e8edb3d631ce2939, type: 2}
+    falseState: {fileID: 0}

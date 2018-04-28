@@ -14,8 +14,9 @@ namespace AI.FSM
             if(agents.Count>1)
             foreach(AiComponent agent in agents)
                 if(controller.tag=="DOG"&&agent.getController().tag == "CAT")
-                if(Vector3.Distance(controller.transform.position,agent.getController().transform.position)<=controller.brain.getSensorRange())
                 return false;
+             //   if(Vector3.Distance(controller.transform.position,agent.getController().transform.position)<=controller.brain.getSensorRange())
+               // return false;
             
             if(Vector3.Distance(controller.transform.position,PlayerController.playerTransform.position)<=controller.brain.getSensorRange()){
             controller.chasing = PlayerController.playerTransform;
