@@ -68,6 +68,7 @@ namespace AiManager
         while (true)
         {
             Vector3 randomPoint = this.transform.position + Random.insideUnitSphere * MovementRange;
+            randomPoint =randomPoint+new Vector3(50,0,50); 
             NavMeshHit hit;
             if (NavMesh.SamplePosition(randomPoint, out hit, 1.0f, NavMesh.AllAreas)  ) {
 				point = hit.position;

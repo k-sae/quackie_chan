@@ -11,7 +11,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 345bd2e8e9e9f45a5b75c37f0c461f2b, type: 3}
   m_Name: WalkDog
   m_EditorClassIdentifier: 
-  actions: []
+  actions:
+  - {fileID: 11400000, guid: f0f418b89cbdd4e90a2d2455294daf71, type: 2}
   transitions:
   - decision: {fileID: 11400000, guid: 81894450546024ec9bf34ff63ff3a37f, type: 2}
     trueState: {fileID: 11400000, guid: 3b49374c1aa14410e8edb3d631ce2939, type: 2}
