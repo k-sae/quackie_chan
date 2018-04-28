@@ -6,7 +6,7 @@ using UnityStandardAssets.Characters.FirstPerson;
 public class PlayerController : MonoBehaviour {
 
 	[SerializeField] private Camera cam;
-	[HideInInspector] static Transform playerTransform;
+	[HideInInspector] public static Transform playerTransform;
 	[SerializeField] private GameObject pivot;
 	[SerializeField] private MouseLook mouseLook;
 	[SerializeField] private float walkSpeed = 5f;

@@ -21,12 +21,19 @@ namespace AiManager
          this.controller =controller;
      }
      public  Vector3 getPosition(){return this.position;}
-     public float getSensorRange(){return this.sensorRange;}
+     public float getSensorRange(){return this.MAX_SENSOR_RANGE;}
 
         public void notifyEnvironmentChanges(List<AiComponent> agents)
         {
             this.agents = agents;
+            if(controller!=null)
             this.controller.updateState();
+        }
+        public List<AiComponent> getAgents(){
+            return this.agents;
+        }
+        public AiComponentController getController(){
+            return this.controller;
         }
     }
 }
