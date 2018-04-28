@@ -8,8 +8,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 345bd2e8e9e9f45a5b75c37f0c461f2b, type: 3}
-  m_Name: Walk
+  m_Script: {fileID: 11500000, guid: d62a19d3476ad491db8625345129cb4e, type: 3}
+  m_Name: AttacPlayer
   m_EditorClassIdentifier: 
-  actions: []
-  transitions: []

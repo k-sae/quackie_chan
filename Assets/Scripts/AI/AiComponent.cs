@@ -9,7 +9,7 @@ namespace AiManager
      private AiComponentController controller;
      private List<AiComponent> agents;
 
-     public readonly float MAX_SENSOR_RANGE = 30;
+     public readonly float MAX_SENSOR_RANGE = 100;
      public float sensorRange{
          get{
              if(sensorRange>=MAX_SENSOR_RANGE) return MAX_SENSOR_RANGE ;else return sensorRange;
@@ -26,6 +26,7 @@ namespace AiManager
         public void notifyEnvironmentChanges(List<AiComponent> agents)
         {
             this.agents = agents;
+            if(controller!=null)
             this.controller.updateState();
         }
         public List<AiComponent> getAgents(){

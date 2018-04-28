@@ -3,6 +3,7 @@ using UnityEngine;
 
 namespace AI.FSM
 {
+    [CreateAssetMenu (menuName = "FSM/Dog/Decision/Walk")]
     public class WalckAroundDecision : Decision
     {
         public override bool Decide(AiComponentController controller)
