@@ -853,7 +853,7 @@ GameObject:
   - component: {fileID: 195913341637725994}
   - component: {fileID: 114464672258450498}
   m_Layer: 0
-  m_Name: Wolf (2)
+  m_Name: dog
   m_TagString: DOG
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

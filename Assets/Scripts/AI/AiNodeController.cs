@@ -12,19 +12,22 @@ namespace AiManager
             this.tempPath = new NavMeshPath();
         }
         private void Start() {
-           InvokeRepeating("generateRandomAiAgent", 120.0f, 70f);
+           InvokeRepeating("generateRandomAiAgent", 180.0f, 180f);
         }
         private void generateRandomAiAgent(){
+                Vector3 point = getRandomMovementPoint();
                 float num = Random.Range(0f, 10.0f);
-                if(num>=5)generateDog();else generateCat();
+                  NavMeshHit hit;
+                if (NavMesh.SamplePosition(point, out hit, 1.0f, NavMesh.AllAreas)  ) 
+                if(num>=5)generateDog(point);else generateCat(point);
         }
 
-        private void generateDog(){
-           GameObject dog =(GameObject)Instantiate(Resources.Load("dog"), getRandomMovementPoint(), new  Quaternion(0,0,0,0));
+        private void generateDog(Vector3 point){
+           GameObject dog =(GameObject)Instantiate(Resources.Load("dog"),point, new  Quaternion(0,0,0,0));
            dog.GetComponent<AiComponentController>().nodeController =this;
         }
-         private void generateCat(){
-           GameObject dog =(GameObject)Instantiate(Resources.Load("cat"), getRandomMovementPoint(), new  Quaternion(0,0,0,0));
+         private void generateCat(Vector3 point){
+           GameObject dog =(GameObject)Instantiate(Resources.Load("cat"), point, new  Quaternion(0,0,0,0));
            dog.GetComponent<AiComponentController>().nodeController =this;
         }
 
