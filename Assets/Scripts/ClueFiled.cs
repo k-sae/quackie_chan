@@ -7,12 +7,12 @@ public class ClueFiled : MonoBehaviour {
 	public Text subtitles;
 
 	void OnTriggerEnter(Collider other) {
-
+		subtitles.text = "man talk";
 
 	}
 	void OnTriggerStay(Collider other)
 	{
-		subtitles.text = "man talk";
+		
 	}
 	void OnTriggerExit(Collider other)
 	{
