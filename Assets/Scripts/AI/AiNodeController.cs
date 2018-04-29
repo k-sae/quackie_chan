@@ -12,7 +12,7 @@ namespace AiManager
             this.tempPath = new NavMeshPath();
         }
         private void Start() {
-           InvokeRepeating("generateRandomAiAgent", 120.0f, 70f);
+           InvokeRepeating("generateRandomAiAgent", 60.0f, 10f);
         }
         private void generateRandomAiAgent(){
                 float num = Random.Range(0f, 10.0f);
