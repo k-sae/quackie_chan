@@ -8,7 +8,13 @@ public class CarClue : MonoBehaviour {
 
 	void OnTriggerEnter(Collider other) {
 
-		subtitles.text = "man talk";
+		if (ClueManger.count == 3) {
+			ClueManger.count++;
+		}
+		if (ClueManger.count > 3) {
+
+			subtitles.text = "man talk";
+		}
 	}
 	void OnTriggerStay(Collider other)
 	{

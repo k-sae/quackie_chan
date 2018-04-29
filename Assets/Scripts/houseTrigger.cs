@@ -3,19 +3,22 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class letterTriger : MonoBehaviour {
+public class houseTrigger : MonoBehaviour {
 
 	public Text subtitles;
 
 	void OnTriggerEnter(Collider other) {
-		if (ClueManger.count == 0) {
+		if (ClueManger.count == 1) {
 			ClueManger.count++;
 		}
-		subtitles.text = "man talk";
+		if (ClueManger.count > 1) {
+
+			subtitles.text = "man talk";
+		}
 	}
 	void OnTriggerStay(Collider other)
 	{
-		
+
 	}
 	void OnTriggerExit(Collider other)
 	{
@@ -23,5 +26,4 @@ public class letterTriger : MonoBehaviour {
 		subtitles.text = "";
 
 	}
-
 }

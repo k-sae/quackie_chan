@@ -2,12 +2,20 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+
 public class ClueFiled : MonoBehaviour {
 
 	public Text subtitles;
 
 	void OnTriggerEnter(Collider other) {
-		subtitles.text = "man talk";
+		if (ClueManger.count == 2) {
+			ClueManger.count++;
+		}
+		if (ClueManger.count > 2) {
+			
+			subtitles.text = "man talk";
+		}
+
 
 	}
 	void OnTriggerStay(Collider other)

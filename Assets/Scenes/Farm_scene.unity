@@ -4769,6 +4769,8 @@ GameObject:
   - component: {fileID: 919404330}
   - component: {fileID: 919404329}
   - component: {fileID: 919404328}
+  - component: {fileID: 919404332}
+  - component: {fileID: 919404333}
   m_Layer: 0
   m_Name: Building_Cottage_01
   m_TagString: Untagged
@@ -4863,6 +4865,30 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 919404326}
   m_Mesh: {fileID: 4300000, guid: 4869efe123b38e04bb3e2228d65653d1, type: 3}
+--- !u!65 &919404332
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 919404326}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2, y: 1.5, z: 1.7}
+  m_Center: {x: -1, y: 13.5, z: -7}
+--- !u!114 &919404333
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 919404326}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a157b0039916d4647a3eb28fbf1c723c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  subtitles: {fileID: 2019131173}
 --- !u!1 &930264435
 GameObject:
   m_ObjectHideFlags: 0
@@ -6740,8 +6766,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 2, y: 2, z: 1}
-  m_Center: {x: 0, y: 0, z: 0.6}
+  m_Size: {x: 1.5, y: 1.7, z: 1}
+  m_Center: {x: 0, y: -0.3, z: 0.6}
 --- !u!114 &1332977836
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11049,7 +11075,7 @@ Prefab:
     - target: {fileID: 65817026531940242, guid: c8b034eb857db49d9bff1fc87cbd5bcd,
         type: 2}
       propertyPath: m_Size.x
-      value: 12
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 65817026531940242, guid: c8b034eb857db49d9bff1fc87cbd5bcd,
         type: 2}
@@ -11059,7 +11085,7 @@ Prefab:
     - target: {fileID: 65817026531940242, guid: c8b034eb857db49d9bff1fc87cbd5bcd,
         type: 2}
       propertyPath: m_Size.z
-      value: 30
+      value: 130000
       objectReference: {fileID: 0}
     - target: {fileID: 65817026531940242, guid: c8b034eb857db49d9bff1fc87cbd5bcd,
         type: 2}
@@ -11069,12 +11095,12 @@ Prefab:
     - target: {fileID: 65817026531940242, guid: c8b034eb857db49d9bff1fc87cbd5bcd,
         type: 2}
       propertyPath: m_Center.x
-      value: -1.6
+      value: -2
       objectReference: {fileID: 0}
     - target: {fileID: 65817026531940242, guid: c8b034eb857db49d9bff1fc87cbd5bcd,
         type: 2}
       propertyPath: m_Center.z
-      value: 0
+      value: -33333
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c8b034eb857db49d9bff1fc87cbd5bcd, type: 2}

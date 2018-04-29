@@ -10,15 +10,17 @@ public class ClueManger : MonoBehaviour {
 	private Vector3 player;
 	private Vector3 clue_field;
 	private Vector3 new_postion;
+	public static int  count ;
 	// Use this for initialization
 	void Start () {
-		
-		showText ("");
+		count = 0;
+		/*showText ("");*/
 
 	}
 	
 	// Update is called once per frame
 	void Update () {
+		/*
 		player = GameObject.FindGameObjectWithTag ("Player").transform.position;
 
 		clue_field = GameObject.FindGameObjectWithTag ("clue_filed").transform.position ;
@@ -49,6 +51,7 @@ public class ClueManger : MonoBehaviour {
 				}
 			}
 		}
+		*/
 	}
 	void showText(string text){
 		subtitles.text = text;
