@@ -6,7 +6,7 @@
 /Assets/Sandbox/
 /Assets/AssetStoreTools*
 /ProjectSettings/ProjectVersion.txt
-
+/out/
 # Visual Studio 2015 cache directory
 /.vs/
 
